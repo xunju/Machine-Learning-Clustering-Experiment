@@ -1,0 +1,38 @@
+================================================================================
+Stage 4: C-class temporal relation clustering
+================================================================================
+[1] Data loaded
+Data shape: (17953, 6)
+Number of frames: 541
+[2] Running method
+method: relation_graph
+
+[3] Summary
+method: relation_graph
+feature_mode: temporal_relation
+num_frames: 541
+avg_num_clusters: 4.857670979667283
+min_num_clusters: 2
+max_num_clusters: 10
+std_num_clusters: 1.5974752449449148
+avg_raw_num_clusters: 4.853974121996303
+fallback_frames: 2
+fallback_ratio: 0.0036968576709796672
+avg_runtime_sec: 0.00901991294183925
+total_runtime_sec: 5.111862421035767
+frames_with_less_than_2_clusters: 0
+ratio_frames_at_least_2_clusters: 1.0
+window_size: 5
+beta: 0.7
+n_clusters_param: 3
+dist_threshold: 2.5
+vel_threshold: 0.2
+sigma_d: 2.0
+sigma_v: 0.1
+result_path: outputs/c_temporal/clusters_c_relation_graph_w5_b0p7_k3_dt2p5_vt0p2_sd2p0_sv0p1.csv
+stats_path: outputs/c_temporal/stats_c_relation_graph_w5_b0p7_k3_dt2p5_vt0p2_sd2p0_sv0p1.csv
+
+[4] Saved files
+result_path: outputs/c_temporal/clusters_c_relation_graph_w5_b0p7_k3_dt2p5_vt0p2_sd2p0_sv0p1.csv
+stats_path: outputs/c_temporal/stats_c_relation_graph_w5_b0p7_k3_dt2p5_vt0p2_sd2p0_sv0p1.csv
+summary_path: outputs/c_temporal/summary_c_relation_graph_w5_b0p7_k3_dt2p5_vt0p2_sd2p0_sv0p1.csv

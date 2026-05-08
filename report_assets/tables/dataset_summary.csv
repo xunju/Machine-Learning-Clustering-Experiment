@@ -1,0 +1,2 @@
+num_records,num_frames,num_unique_ids,time_step_min,time_step_max,min_pedestrians_per_frame,max_pedestrians_per_frame,mean_pedestrians_per_frame,frames_with_less_than_2_pedestrians,duplicated_time_id_records,missing_time_steps,x_min,x_max,y_min,y_max
+17953,541,434,0,5400,13,52,33.18484288354898,0,0,0,-0.174686040989,15.4369843957,-0.222192273533,13.8542013734

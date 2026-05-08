@@ -1,0 +1,38 @@
+================================================================================
+Stage 2: A-class baseline spatial clustering
+================================================================================
+
+[1] Data loaded
+Data shape: (17953, 4)
+Number of frames: 541
+Columns: ['time_step', 'ID', 'X', 'Y']
+
+[2] Running baseline method
+method: kmeans
+n_clusters: 3
+eps: 0.6
+min_samples: 2
+
+[3] Summary
+method: kmeans
+feature_type: spatial_xy
+num_frames: 541
+avg_num_clusters: 3.0
+min_num_clusters: 3
+max_num_clusters: 3
+std_num_clusters: 0.0
+avg_noise_ratio: 0.0
+avg_runtime_sec: 0.008052923763084764
+total_runtime_sec: 5.375815391540527
+frames_with_less_than_2_clusters: 0
+ratio_frames_at_least_2_clusters: 1.0
+n_clusters_param: 3
+eps: 0.6
+min_samples: 2
+result_path: outputs/a_baseline/clusters_kmeans_xy_k3_eps0p6_min2.csv
+stats_path: outputs/a_baseline/stats_kmeans_xy_k3_eps0p6_min2.csv
+
+[4] Saved files
+result_path: outputs/a_baseline/clusters_kmeans_xy_k3_eps0p6_min2.csv
+stats_path: outputs/a_baseline/stats_kmeans_xy_k3_eps0p6_min2.csv
+summary_path: outputs/a_baseline/summary_kmeans_xy_k3_eps0p6_min2.csv

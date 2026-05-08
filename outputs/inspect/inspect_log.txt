@@ -1,0 +1,119 @@
+================================================================================
+Stage 1: Inspect students003 dataset
+================================================================================
+
+[1] Basic data preview
+    time_step     ID          X          Y
+0         0.0    1.0   9.050000   6.038093
+1         0.0    2.0  11.344069   7.398454
+2         0.0    3.0   6.082442   3.603763
+3         0.0    4.0   2.273023   6.205155
+4         0.0    5.0  13.680232   6.539279
+5         0.0    6.0  14.122209   5.560773
+6         0.0    7.0  13.659186   2.386598
+7         0.0    8.0  14.080116   3.198041
+8         0.0    9.0  14.353720   7.851907
+9         0.0   10.0   1.073372   8.281495
+10        0.0   11.0   0.883953   7.899639
+11        0.0   12.0   0.484070   7.875773
+12        0.0   13.0   0.210465   7.374588
+13        0.0   14.0  11.449302   9.498660
+14        0.0   15.0  10.838953   9.236134
+15        0.0   16.0  10.228604   9.522526
+16        0.0   21.0   9.786628   1.527423
+17        0.0   22.0   9.323604   0.477320
+18        0.0   25.0  10.965232  12.863763
+19        0.0  213.0   4.398721  11.264743
+
+[2] Shape and data types
+Shape: (17953, 4)
+time_step    float64
+ID           float64
+X            float64
+Y            float64
+dtype: object
+
+[3] Required columns
+Columns: ['time_step', 'ID', 'X', 'Y']
+Required columns exist: True
+
+[4] Missing values
+time_step    0
+ID           0
+X            0
+Y            0
+dtype: int64
+
+[5] Value ranges
+time_step min: 0
+time_step max: 5400
+number of frames: 541
+ID min: 1
+ID max: 434
+number of unique IDs: 434
+X min: -0.174686040989
+X max: 15.4369843957
+Y min: -0.222192273533
+Y max: 13.8542013734
+
+[6] Time step interval check
+First 10 time steps: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+Last 10 time steps: [5310, 5320, 5330, 5340, 5350, 5360, 5370, 5380, 5390, 5400]
+Unique intervals: [10]
+Missing time steps: 0
+
+[7] Pedestrian count per frame
+min pedestrians per frame: 13
+max pedestrians per frame: 52
+mean pedestrians per frame: 33.18484288354898
+median pedestrians per frame: 34.0
+frames with less than 2 pedestrians: 0
+
+First 10 frame counts:
+time_step
+0     29
+10    30
+20    31
+30    32
+40    33
+50    36
+60    37
+70    38
+80    38
+90    39
+dtype: int64
+
+Last 10 frame counts:
+time_step
+5310    26
+5320    26
+5330    26
+5340    27
+5350    27
+5360    25
+5370    25
+5380    22
+5390    20
+5400    13
+dtype: int64
+
+[8] Duplicate records
+Duplicated (time_step, ID) records: 0
+
+[9] Coordinate quantiles
+1% quantile:
+X    0.379788
+Y    0.570998
+Name: 0.01, dtype: float64
+99% quantile:
+X    14.965753
+Y    13.293580
+Name: 0.99, dtype: float64
+
+[10] Saved files
+outputs/inspect/students003_clean.csv
+outputs/inspect/students003_head100.csv
+outputs/inspect/frame_counts.csv
+outputs/inspect/dataset_summary.csv
+
+Stage 1 inspection finished.

@@ -1,0 +1,16 @@
+stage,method_name,avg_num_clusters,std_num_clusters,avg_noise_ratio,avg_runtime_sec,ratio_frames_at_least_2_clusters,stats_path,mean_cluster_count_change,max_cluster_count_change
+A_baseline,kmeans_spatial_xy,3.0,0.0,0.0,0.0080529237630847,1.0,outputs/a_baseline/stats_kmeans_xy_k3_eps0p6_min2.csv,0.0,0.0
+A_baseline,dbscan_spatial_xy,4.652495378927911,1.216148391316137,0.0770965250759736,0.0008496607958499,1.0,outputs/a_baseline/stats_dbscan_xy_k3_eps0p6_min2.csv,0.7037037037037037,4.0
+A_baseline,agglomerative_spatial_xy,3.0,0.0,0.0,0.0003719937999675,1.0,outputs/a_baseline/stats_agglomerative_xy_k3_eps0p6_min2.csv,0.0,0.0
+A_baseline,gmm_spatial_xy,3.0,0.0,0.0,0.0246468427661606,1.0,outputs/a_baseline/stats_gmm_xy_k3_eps0p6_min2.csv,0.0,0.0
+B_motion,instant_velocity_eps0.8_mw1.0,7.369685767097967,2.3890424420599388,0.3329370505702192,0.0006514252223721,1.0,outputs/b_motion/stats_b_instant_velocity_eps0p8_min2_w5_a0p7_pw1p0_mw1p0.csv,0.8648148148148148,4.0
+B_motion,window_velocity_eps0.8_mw1.0,7.652495378927911,2.4452028361060005,0.317104055546745,0.0006574663349088,1.0,outputs/b_motion/stats_b_window_velocity_eps0p8_min2_w5_a0p7_pw1p0_mw1p0.csv,0.7907407407407407,4.0
+B_motion,window_velocity_eps1.0_mw0.5,3.953789279112754,1.2951796185870776,0.1067733917481899,0.0006837655347728,1.0,outputs/b_motion/stats_b_window_velocity_eps1p0_min2_w5_a0p7_pw1p0_mw0p5.csv,0.5740740740740741,4.0
+B_motion,momentum_eps0.8_mw1.0,7.8077634011090575,2.5099828071254686,0.3069246586953033,0.000670871981411,1.0,outputs/b_motion/stats_b_momentum_eps0p8_min2_w5_a0p7_pw1p0_mw1p0.csv,0.7166666666666667,4.0
+B_motion,momentum_eps1.0_mw0.5,4.011090573012939,1.3122876946893884,0.102568098865075,0.0006906311965914,1.0,outputs/b_motion/stats_b_momentum_eps1p0_min2_w5_a0p7_pw1p0_mw0p5.csv,0.4925925925925926,4.0
+B_motion,direction_eps0.8_mw1.0,7.024029574861368,2.2528531767873257,0.2984519565967196,0.000727501461995,1.0,outputs/b_motion/stats_b_direction_eps0p8_min2_w5_a0p7_pw1p0_mw1p0.csv,0.8759259259259259,5.0
+C_temporal,temporal_agglomerative,3.0,0.0,0.0,0.0095037307845025,1.0,outputs/c_temporal/stats_c_temporal_agglomerative_w5_b0p7_k3_dt1p2_vt0p08_sd2p0_sv0p1.csv,0.0,0.0
+C_temporal,relation_graph_dt1.2_vt0.08,15.706099815157115,2.8996391444102594,0.0,0.0089770628211678,1.0,outputs/c_temporal/stats_c_relation_graph_w5_b0p7_k3_dt1p2_vt0p08_sd2p0_sv0p1.csv,1.0777777777777777,5.0
+C_temporal,relation_graph_dt2.0_vt0.15,7.809611829944547,1.9736176683686304,0.0,0.0097546207265801,1.0,outputs/c_temporal/stats_c_relation_graph_w5_b0p7_k3_dt2p0_vt0p15_sd2p0_sv0p1.csv,0.9296296296296296,5.0
+C_temporal,relation_graph_dt2.5_vt0.2,4.857670979667283,1.5974752449449148,0.0,0.0090199129418392,1.0,outputs/c_temporal/stats_c_relation_graph_w5_b0p7_k3_dt2p5_vt0p2_sd2p0_sv0p1.csv,0.7611111111111111,3.0
+C_temporal,affinity_spectral,3.0,0.0,0.0,0.0142418685990649,1.0,outputs/c_temporal/stats_c_affinity_spectral_w5_b0p7_k3_dt1p2_vt0p08_sd2p0_sv0p1.csv,0.0,0.0

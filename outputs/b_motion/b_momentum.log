@@ -1,0 +1,50 @@
+================================================================================
+Stage 3: B-class motion feature enhanced clustering
+================================================================================
+
+[1] Data loaded
+Data shape: (17953, 4)
+Number of frames: 541
+
+[2] Adding motion features
+Columns: ['time_step', 'ID', 'X', 'Y', 'vx', 'vy', 'window_vx', 'window_vy', 'momentum_vx', 'momentum_vy', 'cos_theta', 'sin_theta']
+
+[3] Running B-class method
+feature_mode: momentum
+eps: 0.8
+min_samples: 2
+window_size: 5
+momentum_alpha: 0.7
+position_weight: 1.0
+motion_weight: 1.0
+
+[4] Summary
+method: dbscan_kmeans_fallback
+feature_mode: momentum
+num_frames: 541
+avg_num_clusters: 7.8077634011090575
+min_num_clusters: 2
+max_num_clusters: 15
+std_num_clusters: 2.5099828071254686
+avg_noise_ratio: 0.3069246586953033
+avg_raw_dbscan_num_clusters: 7.805914972273568
+avg_raw_dbscan_noise_ratio: 0.3077029445207727
+fallback_frames: 1
+fallback_ratio: 0.0018484288354898336
+avg_runtime_sec: 0.0006708719814110155
+total_runtime_sec: 0.9030001163482666
+frames_with_less_than_2_clusters: 0
+ratio_frames_at_least_2_clusters: 1.0
+eps: 0.8
+min_samples: 2
+window_size: 5
+momentum_alpha: 0.7
+position_weight: 1.0
+motion_weight: 1.0
+result_path: outputs/b_motion/clusters_b_momentum_eps0p8_min2_w5_a0p7_pw1p0_mw1p0.csv
+stats_path: outputs/b_motion/stats_b_momentum_eps0p8_min2_w5_a0p7_pw1p0_mw1p0.csv
+
+[5] Saved files
+result_path: outputs/b_motion/clusters_b_momentum_eps0p8_min2_w5_a0p7_pw1p0_mw1p0.csv
+stats_path: outputs/b_motion/stats_b_momentum_eps0p8_min2_w5_a0p7_pw1p0_mw1p0.csv
+summary_path: outputs/b_motion/summary_b_momentum_eps0p8_min2_w5_a0p7_pw1p0_mw1p0.csv

@@ -1,0 +1,5 @@
+method,feature_type,num_frames,avg_num_clusters,min_num_clusters,max_num_clusters,std_num_clusters,avg_noise_ratio,avg_runtime_sec,frames_with_less_than_2_clusters,ratio_frames_at_least_2_clusters,n_clusters_param,eps,min_samples,result_path,stats_path
+kmeans,spatial_xy,541,3.0,3,3,0.0,0.0,0.0080529237630847,0,1.0,3,0.6,2,outputs/a_baseline/clusters_kmeans_xy_k3_eps0p6_min2.csv,outputs/a_baseline/stats_kmeans_xy_k3_eps0p6_min2.csv
+dbscan,spatial_xy,541,4.652495378927911,2,8,1.216148391316137,0.0770965250759736,0.0008496607958499,0,1.0,3,0.6,2,outputs/a_baseline/clusters_dbscan_xy_k3_eps0p6_min2.csv,outputs/a_baseline/stats_dbscan_xy_k3_eps0p6_min2.csv
+agglomerative,spatial_xy,541,3.0,3,3,0.0,0.0,0.0003719937999675,0,1.0,3,0.6,2,outputs/a_baseline/clusters_agglomerative_xy_k3_eps0p6_min2.csv,outputs/a_baseline/stats_agglomerative_xy_k3_eps0p6_min2.csv
+gmm,spatial_xy,541,3.0,3,3,0.0,0.0,0.0246468427661606,0,1.0,3,0.6,2,outputs/a_baseline/clusters_gmm_xy_k3_eps0p6_min2.csv,outputs/a_baseline/stats_gmm_xy_k3_eps0p6_min2.csv
